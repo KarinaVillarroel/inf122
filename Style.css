@@ -1,11 +1,13 @@
 body{
-    background-color:gray;
+    background-color:#c7c8d0;
 }
 h1{
-    color:rgb(255, 0,0);
+    color:#d440d4;
     font-size: 25px;
-    font-family: 'Spage up';
-    background-color: black;
+    /*background-color: black;*/
+}
+h2{
+    color:rgb(174, 17, 127);
 }
 p{
     font-size: large;
@@ -19,7 +21,7 @@ image{
 }
 ol li{
     font-size: 30px;
-    color:rgb(107, 28, 118)
+    color:rgb(179, 111, 188)
 }
 ul li{
    color: rgb(34, 162, 60);
@@ -29,10 +31,11 @@ ul li{
 }
 .enviar{
     border-radius: 5px;
-    background-color: blueviolet;
+    background-color:#5c8762 ;
+    color :#5d4e48;
 }
 .etiqueta{
-    background-color: blue;
+    background-color: rgb(182, 43, 78);
 
     font-size:15px ;
 }
