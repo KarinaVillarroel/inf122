@@ -1,2 +1,3 @@
 # inf122
-karina Mamani Mamani
+nombre:karina Mamani Mamani
+Materia:inf122
