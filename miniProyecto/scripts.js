@@ -3,5 +3,5 @@ function agregarTarea() {
     var nuevaLista = document.createElement("li");
     nuevaLista.textContent = nuevaTarea;
     document.getElementById("tareas-lista").appendChild(nuevaLista);
-    document.getElementById("nueva-tarea").value = "";
+    document.getElementById("nueva-tarea").value = "j";
 }
