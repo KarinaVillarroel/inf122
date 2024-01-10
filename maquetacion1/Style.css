@@ -1,0 +1,48 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+
+}
+body {
+    font-family: 'Nunito';
+    margin: 0;
+}
+
+.title{
+
+   color: #191818;
+
+  text-align: center;
+  font-family: Nunito;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.subtitle{
+color: #AFC0E2;
+
+text-align: center;
+font-family: Nunito;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.icon-text{
+color: #AFC0E2;
+
+text-align: center;
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.icon-texto{
+ width: 300px;
+ height: 160px;
+ flex-shrink: 0;
+ border-radius: 8px;
+ background: #0D1423;
+}
