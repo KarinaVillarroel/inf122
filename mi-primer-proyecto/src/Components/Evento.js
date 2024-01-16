@@ -1,22 +1,26 @@
-import react from"react";
-import '../Styles/Evento.css';
-function Evento(){
-
-return (
-    
+import React from "react";
+import "../styles/Evento.css";
+function Evento() {
+  return (
     <div className="card-container">
-        <img className="card-image"
-        src={require("../Images/evento1.jpg")}alt="foto de evnto"/>
-        <h2 className="card-title">py es Pizza </h2>
-        <p className="card-dato"> es de dicimebre de 2023</p>
-        <p className="card-place">  mdkjhdjsnd,snlmdlkv</p>
-        <p className="card-descriptio "> Hola pythonista
-        participe en est evento precencial de la comunidad Pytho,
-        ¿cunado conoces de Python?
-        Aprende a trabajar en equipo resolviendo increibles 
-        </p>
-        
+
+      <img className="card-image"
+        src={require("../images/evento1.jpg")}
+        alt="Foto del evento" />
+
+
+      <div className="card-content">
+        <h2 className="card-title">Py Pizza 03 - PyPuzzle</h2>
+        <p className="card-date">09 de Diciembre de 2023 - 13:30 GMT-4</p>
+        <p className="card-place">Mr Pizza, 20 de Octubre Frente a la Plaza Abaroa, La Paz, Bolivia</p>
+        <p className="card-description">¡Hola Pythonista!
+          Participa en este Evento Presencial de la comunidad Python La Paz
+          ¿Cuánto conoces de Python?
+          Aprende a trabajar en equipo resolviendo increíbles acertijo
+          ¡Anímate a ser parte de esta actividad!</p>
+      </div>
     </div>
-);
+  );
 }
+
 export default Evento;
