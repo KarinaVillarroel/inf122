@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../styles/historial.css';
 function Historial({ historial, saltarA }) {
     const movimientos = historial.map((paso, movimiento) => {
         const descripcion = movimiento ?
