@@ -1,28 +1,36 @@
 import React from 'react';
 import '../styles/Tablero.css';
 import Cuadro from './Cuadro';
-function Tablero({ cuadros, onClick }) {
-    function renderizarCuadro(i) {
-        return (
-            <Cuadro
-                valor={cuadros[i]}
-                funcion={() => onClick(i)}
-            />
-        );
+import { useState } from 'react';
+
+
+function Tablero() {
+    const [cuadros, setCuadros] = useState(Array(9).fill(null));
+    const [jugador, setJugador] = useState("O");
+    const click = (i) => {
+        const cuadrosTemp = [...cuadros];
+        cuadrosTemp[i] = jugador;
+        setCuadros(cuadrosTemp);
+        if (jugador === "X") {
+            setJugador("O");
+        } else {
+            setJugador("X");
+        }
     }
 
     return (
-        <div>
+        <div className='juego'>
+            <h1>Siguiente Jugador: {jugador}</h1>
             <div className="tablero">
-                {renderizarCuadro(0)}
-                {renderizarCuadro(1)}
-                {renderizarCuadro(2)}
-                {renderizarCuadro(3)}
-                {renderizarCuadro(4)}
-                {renderizarCuadro(5)}
-                {renderizarCuadro(6)}
-                {renderizarCuadro(7)}
-                {renderizarCuadro(8)}
+                <Cuadro valor={cuadros[0]} funcion={() => click(0)} />
+                <Cuadro valor={cuadros[1]} funcion={() => click(1)} />
+                <Cuadro valor={cuadros[2]} funcion={() => click(2)} />
+                <Cuadro valor={cuadros[3]} funcion={() => click(3)} />
+                <Cuadro valor={cuadros[4]} funcion={() => click(4)} />
+                <Cuadro valor={cuadros[5]} funcion={() => click(5)} />
+                <Cuadro valor={cuadros[6]} funcion={() => click(6)} />
+                <Cuadro valor={cuadros[7]} funcion={() => click(7)} />
+                <Cuadro valor={cuadros[8]} funcion={() => click(8)} />
             </div>
         </div>
     );
