@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Tablero from './componets/Tablero';
+ 
 
 function App() {
 
