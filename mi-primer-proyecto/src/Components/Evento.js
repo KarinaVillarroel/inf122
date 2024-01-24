@@ -5,7 +5,7 @@ function Evento() {
     <div className="card-container">
 
       <img className="card-image"
-        src={require("../images/evento1.jpg")}
+        src={require("../images/evento1.jpeg")}
         alt="Foto del evento" />
 
 

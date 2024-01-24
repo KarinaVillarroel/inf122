@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+html,
+body{
+  color:rgb(215, 147, 63);
+  background-color: #fafafc;
+  font-family: lato , sans-serif;
+  margin-top: 40px;
+}
+.Metas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+.App{
+  width: 800px;
+  min-height: 400px;
+  background-color: rgb(41, 26, 93);
+  padding: 25px;
+  margin: 10px;
+  justify-content:center;
+   
+}
+.Metas-lista-principal h1{
+   display: grid;
+   place-items: center;
+}
